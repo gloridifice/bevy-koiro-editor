@@ -1,0 +1,9 @@
+# Rust build output
+/target/
+
+# rustfmt backup files
+**/*.rs.bk
+
+# OS-generated files
+.DS_Store
+Thumbs.db
