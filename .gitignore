@@ -7,3 +7,7 @@
 # OS-generated files
 .DS_Store
 Thumbs.db
+
+# Local editor workspace (layout only)
+/editor-layout.json
+/editor-layout.json.tmp

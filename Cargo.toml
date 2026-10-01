@@ -2,6 +2,16 @@
 name = "bevy-koiro-editor"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.96"
 
 [dependencies]
-bevy = "0.20.0-rc.2"
+bevy = { version = "=0.20.0-rc.2", default-features = false, features = ["3d", "ui", "system_font_discovery", "jpeg"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+resvg = { version = "0.47", default-features = false }
+
+[profile.dev]
+debug = 0
+
+[profile.dev.package."*"]
+opt-level = 2
